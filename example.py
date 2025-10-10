@@ -1,8 +1,9 @@
 import tensorflow as tf
 import numpy as np
 
-a = tf.random.normal([10,10],mean=2.5,stddev=0.25)
-b = tf.random.normal([10,10],mean=1.25,stddev=0.22)
-c = tf.math.add(a,b)
+a = tf.constant([1,3,5,7,9],dtype=tf.float32)
+b = tf.constant(3)
 
-print(a,b,c)
+c = tf.math.multiply(a,b)
+print(c)
+print(c.shape())
